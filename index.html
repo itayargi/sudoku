@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Sudoku Game</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+</head>
+<body>
+    <div class="container">
+        <div style="width: 100%; text-align: center; margin-bottom: 50px; font-size: large; text-decoration: underline;">Sudoku Game</div>
+        <div class="ui tall stacked segment ">
+            <div>
+                <h4 class="headerBox">Select difficulty level:</h4>
+            </div>
+            <div class="radioBtn">
+                <!-- <button onclick="setLevel(10)" class="levelBtn">Easy</button> -->
+                <!-- <button onclick="setLevel(20)" class="levelBtn">Medium</button> -->
+                <!-- <button onclick="setLevel(40)" class="levelBtn">Hard</button> -->
+                <button onclick="setLevel(30)" class="ui green button">Easy</button>
+                <button onclick="setLevel(40)" class="ui teal button">Medium</button>
+                <button onclick="setLevel(50)" class="ui blue button">Hard</button>
+            </div>
+        </div>
+        <div style="width: 100%; justify-content: space-around; display: flex; padding-top: 50px;">
+            <!-- <button id="startBtn" onclick="startGame()" class="btn">START</button>
+            <button id="finishBtn" onclick="finishBtn()" class="btn">FINISH</button>
+            <button class="ui button">
+                Follow
+              </button> -->
+              <button style="font-weight: bold; " onclick="startGame()" class="ui yellow button">START</button>
+              <button style="font-weight: bold;" onclick="finishBtn()" class="ui pink button">FINISH</button>
+        </div>
+        <!-- lost pop up -->
+        <div style="visibility: hidden; text-align: center; position: absolute;" id="popUp" class="ui icon message">
+            <!-- <i class="inbox icon"></i> -->
+            <div class="content">
+              <div class="header">
+                You have lost!
+              </div>
+              <p>Press start to start a new game.</p>
+              <button style="font-weight: bold;" onclick="popUpNotShow()" class="ui black button">CONTINUE</button>
+            </div>
+          </div>
+          <!-- win pop up -->
+          <div style="visibility: hidden; text-align: center; position: absolute;" id="popUpWin" class="ui icon message">
+            <!-- <i class="inbox icon"></i> -->
+            <div class="content">
+              <div class="header">
+                You have Won!
+              </div>
+              <p>Press start to start a new game.</p>
+            </div>
+          </div>
+            <table class="box">
+               
+            </table>
+            
+
+    </div>
+
+
+
+
+    <script src='java.js'></script>
+</body>
+</html>

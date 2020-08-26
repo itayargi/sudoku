@@ -1,0 +1,56 @@
+
+.container{
+    max-height: 100vh;
+    background-image: url('./back3.jpg');
+    height: 100vh;
+}
+.emptyCell{
+    width:20px;
+    height: 20px;
+    text-align: center;
+    background-color: rgb(229, 226, 226);
+}
+
+.box{
+    margin: auto;
+}
+.btn{
+    margin-bottom: 10px;
+    border-radius: 20px;
+    width: 70px;
+}
+#startBtn{
+    background-color: blue;
+}
+#finishBtn{
+    background-color: rgb(172, 248, 179);
+}
+
+/* level */
+.loginBox{
+    width: 50%;
+    height: 150px;
+    border-radius: 15px;
+    margin: auto;
+}
+.headerBox{
+    text-align: center;
+    width: 100%;
+    padding-top: 10px;
+}
+.radioBtn{
+    text-align: center;
+    justify-content: space-around;
+    display: flex;
+    padding-top: 20px;
+}
+.levelBtn{
+    background-color: forestgreen;
+    color: gainsboro;
+    border-radius: 20px;
+    width: 100px;
+}
+.levelBtn:hover{
+    background-color: greenyellow;
+    color: black;
+}
